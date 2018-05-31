@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_start, btn_stop;
+    private Button btn_start, btn_stop, driver_detail;
     private TextView textView;
     private BroadcastReceiver broadcastReceiver;
 
@@ -54,8 +54,12 @@ public class MainActivity extends AppCompatActivity {
         btn_stop = (Button) findViewById(R.id.button2);
         textView = (TextView) findViewById(R.id.textView);
 
+
+
         if(!runtime_permissions())
             enable_buttons();
+
+
 
     }
 
